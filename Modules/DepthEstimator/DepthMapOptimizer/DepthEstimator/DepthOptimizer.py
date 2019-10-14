@@ -21,7 +21,7 @@ save_path = ""
 
 def Run(self):
 	test = self._input.getNextBatch()
-	SendImageData(self.id, test[0][0], self._input.image_width, self._input.image_width, "Original")
+	#SendImageData(self.id, test[0][0], self._input.image_width, self._input.image_width, "Original")
 
 	### defining the model: ###
 
@@ -61,7 +61,7 @@ def Run(self):
 			test_X = [X_batch[0]]
 			test_Y = [Y_batch[0]]
 			rebuilt_image = instance.Run(output, feed_dict = {self.X: test_X})[0]
-			SendImageData(self.id, test_X[0], self._input.image_width, self._input.image_width, "original")
+			SendImageData(self.id, test_X[0][0:1024], self._input.image_width, self._input.image_width, "original")
 			SendImageData(self.id, test_Y[0], self._input.image_width, self._input.image_width, "depth")
 			SendImageData(self.id, rebuilt_image, self._input.image_width, self._input.image_width, "fake")
         

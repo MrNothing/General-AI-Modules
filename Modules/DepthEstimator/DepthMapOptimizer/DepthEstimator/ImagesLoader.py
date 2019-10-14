@@ -21,7 +21,7 @@ rgb_folder = ""
 #param folder
 depth_folder = ""
 
-self.onlyfiles = [f for f in listdir(self.rgb_folder) if isfile(join(self.rgb_folder, f))]
+self.onlyfiles = [f for f in listdir(self.rgb_folder) if not isfile(join(self.rgb_folder, f))]
 
 Log("rgb files: "+str(len(self.onlyfiles)))
 
@@ -36,8 +36,13 @@ def getNextBatch(self):
 
 	for i in range(self.batch_size):
 		index = self.getRandomIndex()
-		x.append(self.image_file_to_tensor(self.rgb_folder+"/"+self.onlyfiles[index]))
-		y.append(self.image_file_to_tensor(self.depth_folder+"/"+self.onlyfiles[index]))
+		data = []
+
+		for i in range(10):
+			data += self.image_file_to_tensor(self.rgb_folder+"/"+self.onlyfiles[index]+"/sc_"+str(i)+".png")
+
+		x.append(data)
+		y.append(self.image_file_to_tensor(self.depth_folder+"/"+self.onlyfiles[index]+"/sc_9.png"))
 
 	return x, y
 
