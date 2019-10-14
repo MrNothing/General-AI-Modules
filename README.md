@@ -3,11 +3,11 @@ It is my belief that our intelligence comes from preprogrammed features that are
 I dont not believe in the concept of a "general AI", when i say general, i mean modules that can be applied to human problems. 
 
 Avaliable modules: 
-- Depth Map: Generates a depth texture from a single image.
-- Video Depth Map: Generates a depth texture from a sequence of images.
+- Depth Map: Generates a 2D depth texture from a single image.
+- Video Depth Map: Generates a 2D depth texture from a sequence of images.
 
 Future modules:
-- Movement Map: Generates a map showing each pixel movement as a vector.
+- Movement Map: Generates a 2D map showing each pixel movement as a vector.
 - Physics Estimator: Generates a 2D map of the physical properties of each pixel in an image.
 - Scene Estimator: Uses multiple modules to generate a 3D voxel map with advanced properties.
 - Scene Predictor: Uses a 3D voxel map to predict the future state of a scene (auto-regressive model).
