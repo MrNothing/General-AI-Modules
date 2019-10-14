@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\Admin\\Desktop\\DepthMapOptimizer\\DepthEstimator\\saver/model"
+all_model_checkpoint_paths: "C:\\Users\\Admin\\Desktop\\DepthMapOptimizer\\DepthEstimator\\saver/model"
