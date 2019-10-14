@@ -1,5 +1,5 @@
 # General-AI-Modules
-It is my belief that our intelligence intially comes from preprogrammed features that are stacked on top of each other. To me, the path to human artificial intelligence lies in creating those building blocks, that will give us the power to manipulate more abstract concepts.
+It is my belief that our intelligence intially comes from preprogrammed systems that are stacked on top of each other. To me, the path to human artificial intelligence lies in creating those building blocks, that will give us the power to manipulate more abstract concepts.
 Each one of these modules is supposed to be usable in any context, be it real life or video games.
 
 Avaliable modules: 
