@@ -29,11 +29,13 @@ def Run(self):
 
 	#load test data
 	while True:
-		frame = self._input.getNextCameraFrame()
+		frame = []
+		for i in range(10):
+			frame += self._input.getNextCameraFrame()
 
 		prediction = instance.Run(output, feed_dict={predictor: [frame]})[0]
 
-		SendImageData(self.id, frame, self._input.image_width, self._input.image_width, "source")
+		SendImageData(self.id, frame[0:1024], self._input.image_width, self._input.image_width, "source")
 		SendImageData(self.id, prediction, self._input.image_width, self._input.image_width, "depth")
 
 	AIBlocks.CloseInstance(instance)

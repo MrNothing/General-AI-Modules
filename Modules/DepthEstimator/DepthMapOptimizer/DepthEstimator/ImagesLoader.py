@@ -37,10 +37,7 @@ def getNextBatch(self):
 	for i in range(self.batch_size):
 		index = self.getRandomIndex()
 		data = []
-
-		for i in range(10):
-			data += self.image_file_to_tensor(self.rgb_folder+"/"+self.onlyfiles[index]+"/sc_"+str(i)+".png")
-
+		data += self.image_file_to_tensor(self.rgb_folder+"/"+self.onlyfiles[index]+"/sc_9.png")
 		x.append(data)
 		y.append(self.image_file_to_tensor(self.depth_folder+"/"+self.onlyfiles[index]+"/sc_9.png"))
 
