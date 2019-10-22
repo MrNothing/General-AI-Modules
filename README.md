@@ -7,6 +7,7 @@ Avaliable modules:
 - Video Depth Map: Generates a 2D depth texture from a sequence of images.
 
 Future modules:
+- Layers estimator: Conditioned by depth, estimates each layer in a scene.
 - Movement Map: Generates a 2D map showing each pixel movement as a vector.
 - Physics Estimator: Generates a 2D map of the physical properties of each pixel in an image.
 - Scene Estimator: Uses multiple modules to generate a 3D voxel map with advanced properties.
