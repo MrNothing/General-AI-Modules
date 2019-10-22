@@ -24,6 +24,9 @@ def getNextCameraFrame(self):
 	img_ = cv2.resize(frame,(self.image_width,self.image_width))
 	return self.rgb_to_grayscale(img_)
 
+def GetTestBatch(self):
+	return [self.getNextCameraFrame()]
+
 def rgb_to_grayscale(self, img_orig):
 	im = []
 	for i in range(self.image_width):

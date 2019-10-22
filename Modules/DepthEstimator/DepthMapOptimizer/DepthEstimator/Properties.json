@@ -1,1 +1,1 @@
-{"projectname":"DepthEstimator","projectpath":"C:\\Users\\Admin\\Desktop\\DepthMapOptimizer\\DepthEstimator","version":"0.0.0","engine":"Tensorflow","usegpu":true,"consolelines":100,"theme":"default","sceneNames":["Scene 1","Scene 2","Keras Trainer","Scene 4"]}
+{"projectname":"DepthEstimator","projectpath":"C:\\Users\\Admin\\Desktop\\DepthMapOptimizer\\DepthEstimator","version":"0.0.0","engine":"Tensorflow","usegpu":true,"consolelines":100,"theme":"default","sceneNames":["Scene 1","Scene 2","Keras Trainer","Keras Predictor"]}
