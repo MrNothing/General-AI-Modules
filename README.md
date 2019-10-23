@@ -8,6 +8,7 @@ Avaliable modules:
 
 Future modules:
 - Layers estimator: Conditioned by depth, estimates each layer in a scene.
+- Object estimator: Contitioned by 2D position, estimates the voxel contours and shape of an object.
 - Movement Map: Generates a 2D map showing each pixel movement as a vector.
 - Physics Estimator: Generates a 2D map of the physical properties of each pixel in an image.
 - Scene Estimator: Uses multiple modules to generate a 3D voxel map with advanced properties.
